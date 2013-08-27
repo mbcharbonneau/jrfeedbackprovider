@@ -16,12 +16,13 @@
  */
 #define USE_GROWL 0
 
-typedef enum {
+typedef NS_ENUM( NSInteger, JRFeedbackController_Section )
+{
     JRFeedbackController_BugReport,
     JRFeedbackController_FeatureRequest,
     JRFeedbackController_SupportRequest,
     JRFeedbackController_SectionCount
-} JRFeedbackController_Section;
+};
 
 @interface JRFeedbackController : NSWindowController {
     IBOutlet NSTextView *textView;
